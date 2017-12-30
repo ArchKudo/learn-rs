@@ -26,7 +26,7 @@ fn main() {
 	    let mut guess = String::new();
 
 	    // `read_line` returns either Ok/Err
-	    // `expect` panics on Err or returns number of bytes on Ok
+	    // On Ok returns number of bytes read, Err handled by expect
 	    io::stdin().read_line(&mut guess)
 	    	.expect("Failed to read line!");
 
