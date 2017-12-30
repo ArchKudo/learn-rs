@@ -33,8 +33,10 @@ fn main() {
 	    // Add type annotations to u32
 	    // trim and parse string as u32
 	    // NOTE: guest variable is *shadowed*
-	    let guess: u32 = guess.trim().parse()
-	    	.expect("Please type a number.");
+	    let guess: u32 = match guess.trim().parse() {
+	    	Ok(num) => num,
+	    	Err(_) => continue,
+	    };
 
 	    println!("You guessed: {}", guess);
 
