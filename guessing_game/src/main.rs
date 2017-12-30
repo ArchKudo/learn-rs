@@ -2,6 +2,7 @@ extern crate rand;
 
 // io is a library inside the std library for I/O
 use std::io;
+// Defines trait, must be in scope for thread_rng to work
 use rand::Rng;
 
 fn main() {
