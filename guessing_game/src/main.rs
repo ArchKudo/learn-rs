@@ -4,6 +4,8 @@ extern crate rand;
 use std::io;
 // Defines trait, must be in scope for thread_rng to work
 use rand::Rng;
+// Ordering returns result Less/Greater/Equal
+use std::cmp::Ordering;
 
 fn main() {
 	// Add a prompt
@@ -28,4 +30,12 @@ fn main() {
     	.expect("Failed to read line!");
 
     println!("You guessed: {}", guess);
+
+    // `match` similar to switch(?)
+    // `cmp` takes reference
+    match guess.cmp(&secret_number) {
+    	Ordering::Less => println!("Too small!"),
+    	Ordering::Greater => println!("To big!"),
+    	Ordering::Equal => println!("You win!"),
+    }
 }
