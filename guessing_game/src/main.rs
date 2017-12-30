@@ -17,28 +17,37 @@ fn main() {
 
     println!("The secret number is: {}", secret_number);
 
-    println!("Please input your guess!");	
+    loop {
+	    println!("Please input your guess!");	
 
-    // `let` is used to define new variables
-    // `::new` is an associated function a.k.a static method
-    // associated function are implemented with type rather than instance of the type
-    let mut guess = String::new();
+	    // `let` is used to define new variables
+	    // `::new` is an associated function a.k.a static method
+	    // associated function are implemented with type rather than instance of the type
+	    let mut guess = String::new();
 
-    // `read_line` returns either Ok/Err
-    // `expect` panics on Err or returns number of bytes on Ok 
-    io::stdin().read_line(&mut guess)
-    	.expect("Failed to read line!");
+	    // `read_line` returns either Ok/Err
+	    // `expect` panics on Err or returns number of bytes on Ok
+	    io::stdin().read_line(&mut guess)
+	    	.expect("Failed to read line!");
 
-    let guess: u32 = guess.trim().parse()
-    	.expect("Please type a number.");
+	    // Add type annotations to u32
+	    // trim and parse string as u32
+	    // NOTE: guest variable is *shadowed*
+	    let guess: u32 = guess.trim().parse()
+	    	.expect("Please type a number.");
 
-    println!("You guessed: {}", guess);
+	    println!("You guessed: {}", guess);
 
-    // `match` similar to switch(?)
-    // `cmp` takes reference
-    match guess.cmp(&secret_number) {
-    	Ordering::Less => println!("Too small!"),
-    	Ordering::Greater => println!("Too big!"),
-    	Ordering::Equal => println!("You win!"),
-    }
+	    // `match` similar to switch(?)
+	    // `cmp` takes reference
+	    match guess.cmp(&secret_number) {
+	    	Ordering::Less => println!("Too small!"),
+	    	Ordering::Greater => println!("Too big!"),
+	    	Ordering::Equal => {
+	    		println!("You win!");
+	    		// break out of loop
+	    		break;
+	    	},
+	    }
+	}
 }
