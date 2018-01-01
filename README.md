@@ -21,3 +21,9 @@ Programs based on the official Rust Book 2.0
 	* Using `match`
 	* Using `cmp`
 	* Using `rand`...
+4. f2c
+	* Using function on strings
+	* Dabble into iterators
+	* Using `if` conditional
+	* Creating `functions`
+
