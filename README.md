@@ -26,4 +26,7 @@ Programs based on the official Rust Book 2.0
 	* Dabble into iterators
 	* Using `if` conditional
 	* Creating `functions`
-
+5. christmas_song
+	* More conditionals
+	* Using `..` operator
+	* That `{":?"}` is for debug purposes
