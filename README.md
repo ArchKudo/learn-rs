@@ -8,11 +8,11 @@ Programs based on the official Rust Book 2.0
 2. hello_cargo
 	* Use cargo package manager
 3. guessing_game
-	* Use external crate(rand)
-	* Defining a trait
+	* Use external crate(`rand`)
+	* Defining a *trait*
 	* Creating new variables with `let`
 	* Creating new mutable variables with `mux`
-	* Using associate(static) methods with `::`
+	* Using __associate__(static) methods with `::`
 	* Type annotations
 	* Variable shadowing
 	* Handling results
@@ -25,8 +25,8 @@ Programs based on the official Rust Book 2.0
 	* Using function on strings
 	* Dabble into iterators
 	* Using `if` conditional
-	* Creating `functions`
+	* Creating functions with `fn`
 5. christmas_song
 	* More conditionals
-	* Using `..` operator
-	* That `{":?"}` is for debug purposes
+	* Using `..` operator for iteration
+	* That `{:?}` is for debug purposes
