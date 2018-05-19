@@ -10,7 +10,7 @@ fn main() {
         "Eight Maids a Milking,",
         "Nine Ladies Dancing,",
         "Ten Lords a Leaping,",
-        "Eleven Pipers Piping,I",
+        "Eleven Pipers Piping,",
         "Twelve Drummers Drumming,",
     ];
 
