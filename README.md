@@ -12,7 +12,7 @@ Programs based on the official Rust Book 2.0
     * Use external crate(`rand`)
     * Defining a *trait*
     * Creating new variables with `let`
-    * Creating new mutable variables with `mux`
+    * Creating new mutable variables with `mut`
     * Using __associate__(static) methods with `::`
     * Type annotations
     * Variable shadowing
@@ -22,12 +22,18 @@ Programs based on the official Rust Book 2.0
     * Using `match`
     * Using `cmp`
     * Using `rand`...
-4. [f2c](./f2c/src/main.rs)
+4. [variables](./variables/src/main.rs)
+    * Declaring immutable variables with `let`
+    * Declaring mutable variables with `mut`
+    * Declaring constants with `const`
+    * Value and type shadowing
+    * Differnce between the three types
+5. [f2c](./f2c/src/main.rs)
     * Using function on strings
     * Dabble into iterators
     * Using `if` conditional
     * Creating functions with `fn`
-5. [christmas_song](./christmas_song/src/main.rs)
+6. [christmas_song](./christmas_song/src/main.rs)
     * More conditionals
     * Using `..` operator for iteration
     * That `{:?}` is for debug purposes

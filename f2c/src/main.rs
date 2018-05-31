@@ -24,7 +24,6 @@ fn main() {
     } else if temp == 'c' {
         println!("{:?}°C = {:?}°F", val, c2f(val));
     }
-    
 }
 
 // fn func(param: type) -> return_type
