@@ -5,7 +5,7 @@ Programs based on the official Rust Book 2.0
 ## Summary
 
 1. [hello_world](./hello_world/main.rs)
-    * Use println
+    * Use `println!` macro
 2. [hello_cargo](./hello_cargo/src/main.rs)
     * Use cargo package manager
 3. [guessing_game](./guessing_game/src/main.rs)
