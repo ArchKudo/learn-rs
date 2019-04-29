@@ -28,12 +28,17 @@ Programs based on the official Rust Book 2.0
     * Declaring constants with `const`
     * Value and type shadowing
     * Differnce between the three types
-5. [f2c](./f2c/src/main.rs)
+5. [data_types](./data_types/src/main.rs)
+    * Declaring scalar and compound data-types(tuple and arrays)
+    * Declaring variables with types (& sometimes size)
+    * Creating fixed length arrays
+    * Accessing elements of compound data-types
+6. [f2c](./f2c/src/main.rs)
     * Using function on strings
     * Dabble into iterators
     * Using `if` conditional
     * Creating functions with `fn`
-6. [christmas_song](./christmas_song/src/main.rs)
+7. [christmas_song](./christmas_song/src/main.rs)
     * More conditionals
     * Using `..` operator for iteration
     * That `{:?}` is for debug purposes
