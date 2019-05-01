@@ -53,7 +53,13 @@ Programs based on the official Rust Book 2.0
     * Dabble into iterators
     * Using `if` conditional
     * Creating functions with `fn`
-9. [christmas_song](./christmas_song/src/main.rs)
+9. [fibonacci](./fibonacci/src/main.rs)
+    * Used recursive function
+    * Alternative using iteration
+    * Learned that Rust still doesn't support destructuring assignment
+    * And also no sane way to use yield
+    * The iterative alt. function has a bug!
+10. [christmas_song](./christmas_song/src/main.rs)
     * More conditionals
     * Using `..` operator for iteration
     * That `{:?}` is for debug purposes
