@@ -34,16 +34,26 @@ Programs based on the official Rust Book 2.0
     * Creating fixed length arrays
     * Accessing elements of compound data-types
 6. [functions](./functions/src/main.rs)
-    * Creating functions
-        * with parameters
+    * Creating functions using `fn`
+        * with parameters and return types(appended after `->`)
         * with explicit returns
         * with implicit returns
-7. [f2c](./f2c/src/main.rs)
+7. [control_flow](./control_flow/src/main.rs)
+    * Using `if`/`else`/`else if`
+    * Using conditional as expressions
+    * Creating and `break`ing `loop`s
+    * That `break` return the value of the following expression
+    * Using `while`
+    * Using `for`
+    * Using `..` to generate range
+    * Using `iter()` method to iterate through an array
+    * Using `rev()` method to reverse a range
+8. [f2c](./f2c/src/main.rs)
     * Using function on strings
     * Dabble into iterators
     * Using `if` conditional
     * Creating functions with `fn`
-8. [christmas_song](./christmas_song/src/main.rs)
+9. [christmas_song](./christmas_song/src/main.rs)
     * More conditionals
     * Using `..` operator for iteration
     * That `{:?}` is for debug purposes
