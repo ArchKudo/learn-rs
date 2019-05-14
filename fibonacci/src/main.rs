@@ -18,12 +18,10 @@ fn fib(x: usize) -> usize {
     }
 }
 
-// Not entirely sure how yield works and, not rolling a iterator
-// just yet... So ya, beware of a subtle bug in this function!
 fn ifib(x: usize) -> usize {
     let mut vals = (0, 1);
-    for _ in 1..x {
+    for _ in 0..x {
         vals = (vals.1, vals.0 + vals.1);
     }
-    vals.1
+    vals.0
 }
